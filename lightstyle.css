@@ -1,0 +1,28 @@
+* {
+	border-color: #ebebfa;
+	color: black;
+}
+
+body {
+	background-image: url("/img/hex_bg.png");
+}
+
+a {
+	color: #800040;
+}
+
+header {
+	background-color: #c2c2f0;
+}
+
+button {
+	background-color: #7070db;
+}
+
+#nav-tail-links {
+	background-color: #7070db;
+}
+
+footer {
+	background-color: #c2c2f0;
+}

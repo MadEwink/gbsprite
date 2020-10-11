@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Game Boy Sprite Editor</title>
+		<link href="./style.css" rel="stylesheet">
+		<link href="./darkstyle.css" id="Dark-theme" title="Dark" rel="alternative stylesheet">
+		<link href="./lightstyle.css" id="Light-theme" title="Light" rel="alternative stylesheet">
+		<link rel="icon" href="/img/favicon.ico">
+		<script src="./editor.js"></script>
+		<script src="/js/theme.js"></script>
+	</head>
+	<body>
+		<header>
+			<div id ="nav">
+				<a href="/"><img id="nav-pp" src="/img/pp.png" alt="Profile picture"></a>
+				<br/>
+				<div id="nav-title">GameBoy Sprite Editor</div>
+				<ul class="nav-links">
+					<li><a href="https://github.com/MadEwink">Github</a></li>
+					<li><a href="https://gitlab.com/MadEwink">Gitlab</a></li>
+					<li><a href="https://framagit.org/MadEwink">Framagit</a></li>
+				</ul>
+				<div id="nav-tail">
+					<div>
+						<button class="theme" id="light-theme-button" style="display:none" onClick="setLightTheme()">Switch to light theme</button>
+						<button class="theme" id="dark-theme-button" style="display:none" onClick="setDarkTheme()">Switch to dark theme</button>
+					</div>
+					<ul class="nav-links" id="nav-tail-links">
+						<li><a href="/">Home</a></li>
+						<li><a href="/projects">Projects</a></li>
+						<li><a href="/about.html">About</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<div id="sprite-zone">
+			<svg id="sprite" onload=GBSpriteEditor.instance.new_sprite(this,16,16)></svg>
+			<div id="buttons">
+				<button id="translate-hex" onClick=GBSpriteEditor.instance.sprite_button(this)>Translate to hex</button>
+				<textarea id ="hex-value" type="text"></textarea>
+				<button id="read-hex" onClick=GBSpriteEditor.instance.sprite_button(this)>Read from hex</button>
+				<button id="gen-dl" onClick=GBSpriteEditor.instance.sprite_button(this)>Create download link</button>
+				<a download="sprite.chr">Download Sprite</a>
+			</div>
+		</div>
+		<footer>
+			MadEwink<br/>
+			This site is open source.<br/>
+			It is hosted on github <a href = "https://github.com/MadEwink/MadEwink.github.io/">there</a>.
+		</footer>
+	</body>
+</html>

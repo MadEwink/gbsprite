@@ -19,6 +19,10 @@ button {
 	background-color: #1f1f7a;
 }
 
+div#sprite-zone > #buttons {
+	background-color: #1f1f7a;
+}
+
 #nav-tail-links {
 	background-color: #1f1f7a;
 }

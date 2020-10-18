@@ -6,15 +6,15 @@ A small javascript tool that makes it easy to edit and export gameboy sprites.
 
 Base functions
 - [x] Show sprite
-- [ ] Edit sprite by clicking it
-- [ ] Change current color
+- [x] Edit sprite by clicking it
+- [x] Change current color
 - [ ] Change the palette's colors
 - [x] Get hexadecimal values corresponding to the sprite
 - [x] Read image data from hexadecimal values
 - [x] Export from binary file
 - [ ] Import from binary file
 - [ ] Import from image format (bmp) 
-- [ ] User defined sprite size
+- [x] User defined sprite size
 
 Improvements
 - [ ] When creating big images, generate tilemap and sprites

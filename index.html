@@ -36,6 +36,12 @@
 		<div id="sprite-zone">
 			<svg id="sprite" onload=GBSpriteEditor.instance.new_sprite(this,16,16)></svg>
 			<div id="buttons">
+				<svg id="palette" onload=GBSpriteEditor.instance.generate_palette(this)></svg>
+				<div id="resize">
+					<textarea id="resize-width" row="1" col="3"></textarea>
+					<textarea id="resize-height" row="1" col="3"></textarea>
+					<button id="resize-button" onClick="GBSpriteEditor.instance.onResizeButton(this)">Resize</button>
+				</div>
 				<button id="translate-hex" onClick=GBSpriteEditor.instance.sprite_button(this)>Translate to hex</button>
 				<textarea id ="hex-value" type="text"></textarea>
 				<button id="read-hex" onClick=GBSpriteEditor.instance.sprite_button(this)>Read from hex</button>

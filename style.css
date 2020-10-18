@@ -92,6 +92,18 @@ div#sprite-zone > #sprite {
 
 div#sprite-zone > #buttons {
 	display: grid;
+	padding: 5px;
+	margin: 3px;
+	border-style: solid;
+	border-width: 3px;
+	border-radius: 15px;
+}
+
+div#sprite-zone > #buttons > svg#palette {
+	width: inherit;
+	margin: 2em;
+	border-style:solid;
+	border-width: 6px;
 }
 
 div#sprite-zone > #buttons * {
@@ -100,6 +112,9 @@ div#sprite-zone > #buttons * {
 
 div#sprite-zone textarea {
 	color: black;
+}
+
+div#sprite-zone textarea#hex-value {
 	width: 20em;
 	height: 20em;
 }
